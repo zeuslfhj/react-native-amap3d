@@ -1,8 +1,8 @@
 {
-  "name": "react-native-amap3d",
+  "name": "@zero-knight/react-native-amap3d",
   "version": "2.0.4",
   "description": "react-native 高德地图组件，支持 Android + iOS",
-  "author": "7c00 <i@7c00.cc>",
+  "author": "zero",
   "license": "MIT",
   "keywords": [
     "react-native",
@@ -36,9 +36,9 @@
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.5.0",
     "@react-navigation/stack": "^5.4.1",
-    "@types/react-native": "^0.63.1",
-    "react": "16.13.1",
-    "react-native": "^0.63.1",
+    "@types/react-native": "0.64.1",
+    "react": "17.0.1",
+    "react-native": "0.64.1",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-safe-area-context": "^3.1.1",
     "react-native-screens": "^2.9.0"
