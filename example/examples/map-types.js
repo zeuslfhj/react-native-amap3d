@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Picker } from "react-native";
-import { MapView, MapType } from "react-native-amap3d";
+import { MapView, MapType } from "@zero-knight/react-native-amap3d";
 
 export default ({ navigation, route }) => {
   const { params = { mapType: MapType.Standard } } = route;

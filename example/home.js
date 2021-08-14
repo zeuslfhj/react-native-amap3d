@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  NativeModules,
   Platform,
   ScrollView,
   StyleSheet,
@@ -8,6 +9,9 @@ import {
   TouchableNativeFeedback,
   View
 } from "react-native";
+import { AMapSearch } from '@zero-knight/react-native-amap3d';
+// const { AMapSearch, AMapOffline } = NativeModules;
+// const { AMapOffline } = NativeModules;
 
 const style = StyleSheet.create({
   scrollView: {
@@ -43,6 +47,13 @@ if (Platform.OS === "android") {
 }
 
 export default ({ navigation }) => {
+  // alert(typeof AMapSearch.requestPOIByKeyWords);
+  console.log(AMapSearch.searchPOIKeyWords('北京', '北京', '城市', true, (err, ret) => {
+    if (err) {
+      alert('receive error:' + err.message);
+    }
+    alert('receive content ' + JSON.stringify(ret));
+  }));
   const renderItem = name => (
     <Touchable onPress={() => navigation.navigate(name)}>
       <View style={style.item}>
@@ -67,6 +78,8 @@ export default ({ navigation }) => {
         {renderItem("动画移动")}
         <View style={style.separator} />
         {renderItem("地图事件")}
+        <View style={style.separator} />
+        {renderItem("地图搜索")}
       </View>
       <View style={style.group}>
         {renderItem("添加标记")}

@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { Offline } from 'react-native-amap3d'
+import { Offline } from "@zero-knight/react-native-amap3d"
 
 // TODO: 提供完整的离线地图示例
 export default class IndoorExample extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { MapView } from "react-native-amap3d";
+import { MapView } from "@zero-knight/react-native-amap3d";
 
 const styles = StyleSheet.create({
   customIcon: {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Dimensions } from "react-native";
-import { MapView } from "react-native-amap3d";
+import { MapView } from "@zero-knight/react-native-amap3d";
 
 const styles = StyleSheet.create({
   body: {

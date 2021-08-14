@@ -6,7 +6,7 @@ module.exports = {
     }
   },
   dependencies: {
-    "react-native-amap3d": {
+    "@zero-knight/react-native-amap3d": {
       root: __dirname,
       platforms: {
         ios: { podspecPath: __dirname + "/lib/ios/react-native-amap3d.podspec" },

@@ -11,6 +11,7 @@ import Circle from "./circle";
 import Events from "./events";
 import HeatMap from "./heat-map";
 import MultiPoint from "./multi-point";
+import Search from './search';
 import Offline from "./offline";
 
 export default {
@@ -26,6 +27,7 @@ export default {
   绘制多边形: Polygon,
   绘制圆形: Circle,
   热力图: HeatMap,
-  海量点: MultiPoint
+  海量点: MultiPoint,
+  地图搜索: Search,
   // 离线地图: Offline
 };
