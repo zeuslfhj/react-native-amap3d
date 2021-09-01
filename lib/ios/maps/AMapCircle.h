@@ -4,6 +4,7 @@
 #pragma ide diagnostic ignored "OCUnusedPropertyInspection"
 
 @interface AMapCircle : AMapOverlay
+/// test
 
 @property(nonatomic, readonly) CLLocationCoordinate2D coordinate;
 @property(nonatomic, readonly) MAMapRect boundingMapRect;
