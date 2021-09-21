@@ -102,6 +102,7 @@
     [super removeReactSubview:subview];
     if ([subview isKindOfClass:[AMapMarker class]]) {
         AMapMarker *marker = (AMapMarker *) subview;
+        [_markers removeObjectForKey:[@(marker.annotation.hash) stringValue]];
         [self removeAnnotation:marker.annotation];
     }
     if ([subview isKindOfClass:[AMapOverlay class]]) {
