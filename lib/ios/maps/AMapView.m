@@ -90,7 +90,9 @@
         marker.mapView = self;
         _markers[[@(marker.annotation.hash) stringValue]] = marker;
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self addAnnotation:marker.annotation];
+            if (_markers[[@(marker.annotation.hash) stringValue]] != nil) {
+                [self addAnnotation:marker.annotation];
+            }
         });
     }
     if ([subview isKindOfClass:[AMapOverlay class]]) {
